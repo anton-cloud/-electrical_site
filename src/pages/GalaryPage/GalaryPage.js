@@ -1,5 +1,12 @@
+import PhotoGalary from "../../components/PhotoGalary";
+import { GalaryPageStyled } from "./GalaryPageStyled";
+
 const GalaryPage = () => {
-  return <h1>GalaryPage</h1>;
+  return (
+    <GalaryPageStyled>
+      <PhotoGalary />
+    </GalaryPageStyled>
+  );
 };
 
 export default GalaryPage;

@@ -3,6 +3,7 @@ import sprite from "../../icons/sprite.svg";
 import { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 import SocailIcons from "../SocailIcons/SocailIcons";
+import { Link } from "react-router-dom";
 
 const Header = ({ isOpenModal, openModal }) => {
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
@@ -19,26 +20,30 @@ const Header = ({ isOpenModal, openModal }) => {
 
   return (
     <header className={styles.header}>
-      <svg className={styles.headerIcon}>
-        <use href={sprite + "#icon-logo"} />
-      </svg>
-
-      {isDesktop && <Navigation isDesktop={isDesktop} />}
-
-      {isDesktop && <SocailIcons />}
-
-      {isDesktop && <button type="button">Оформити заявку</button>}
-
-      {!isDesktop &&
-        (isOpenModal ? (
-          <svg className={styles.headerIcon} onClick={openModal}>
-            <use href={sprite + "#icon-close"} />
+      <div className={styles.container}>
+        <Link to="/">
+          <svg className={styles.headerIcon}>
+            <use href={sprite + "#icon-logo"} />
           </svg>
-        ) : (
-          <svg className={styles.headerIcon} onClick={openModal}>
-            <use href={sprite + "#icon-menu"} />
-          </svg>
-        ))}
+        </Link>
+
+        {isDesktop && <Navigation isDesktop={isDesktop} />}
+
+        {isDesktop && <SocailIcons />}
+
+        {isDesktop && <button type="button">Оформити заявку</button>}
+
+        {!isDesktop &&
+          (isOpenModal ? (
+            <svg className={styles.headerIcon} onClick={openModal}>
+              <use href={sprite + "#icon-close"} />
+            </svg>
+          ) : (
+            <svg className={styles.headerIcon} onClick={openModal}>
+              <use href={sprite + "#icon-menu"} />
+            </svg>
+          ))}
+      </div>
     </header>
   );
 };

@@ -1,12 +1,15 @@
+import Cover from "../../components/Cover";
+import OrderWorks from "../../components/OrderWorks";
+import Services from "../../components/Services";
 import styles from "./HomePage.module.css";
 
 const HomePage = () => {
   return (
-    <section className={styles.section}>
-      <p className={styles.subTitle}>Якісно, Швидко, Доступно</p>
-      <h1 className={styles.title}>Електромонтажні роботи в Києві</h1>
-      <a className={styles.btn}>Дізнатися більше</a>
-    </section>
+    <>
+      <Cover />
+      <Services />
+      <OrderWorks />
+    </>
   );
 };
 

@@ -1,22 +1,38 @@
 import { NavLink } from "react-router-dom";
-import styles from "./Naviagation.modules.css";
+import { NavigationStyled } from "./NavigationStyled";
 
 const Navigation = ({ isDesktop }) => {
   return (
-    <nav>
+    <NavigationStyled>
       <ul className="navList list">
         <li className="navListItem">
-          <NavLink className="link" to="/services">
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "link"
+            }
+            exact="true"
+          >
             Послуги
           </NavLink>
         </li>
         <li className="navListItem">
-          <NavLink className="link" to="/galary">
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "link"
+            }
+            to="/galary"
+          >
             Галерея
           </NavLink>
         </li>
         <li className="navListItem">
-          <NavLink className="link" to="/about">
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "link active-link" : "link"
+            }
+            to="/about"
+          >
             Про нас
           </NavLink>
         </li>
@@ -28,7 +44,7 @@ const Navigation = ({ isDesktop }) => {
           </li>
         )}
       </ul>
-    </nav>
+    </NavigationStyled>
   );
 };
 

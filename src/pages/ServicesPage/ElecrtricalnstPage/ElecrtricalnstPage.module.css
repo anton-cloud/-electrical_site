@@ -1,0 +1,8 @@
+.wrapper {
+  background: linear-gradient(
+    0deg,
+    rgba(10, 28, 45, 0.8127626050420168) 37%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: inherit;
+}

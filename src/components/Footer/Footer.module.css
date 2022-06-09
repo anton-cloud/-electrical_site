@@ -1,0 +1,52 @@
+footer {
+  bottom: 0;
+}
+.footer__container {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footerIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.text_wrapper {
+  padding: 10px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rights {
+  border-top: 1px solid rgb(240, 232, 232);
+  background-color: #000;
+}
+
+.rights__text {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.contacts__list {
+  margin: 10px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  list-style: none;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (min-width: 600px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
