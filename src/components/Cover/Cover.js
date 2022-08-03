@@ -17,19 +17,16 @@
 
 // export default Cover;
 
-import Container from "../Container";
 import { CoverStyled } from "./CoverStyled";
 
 const Cover = () => {
   return (
     <CoverStyled>
-      <Container>
-        <div className="wrapper">
-          <p className="subTitle">Якісно, Швидко, Доступно</p>
-          <h1 className="title">Електромонтажні роботи в Києві</h1>
-          <a className="btn">Дізнатися більше</a>
-        </div>
-      </Container>
+      <div className="wrapper">
+        <p className="subTitle">Якісно, Швидко, Доступно</p>
+        <h1 className="title">Електромонтажні роботи в Києві</h1>
+        <a className="btn">Дізнатися більше</a>
+      </div>
     </CoverStyled>
   );
 };

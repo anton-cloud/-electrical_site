@@ -1,5 +1,14 @@
 .section {
-  background-color: rgb(88, 88, 88);
+  /* background: linear-gradient(
+    0deg,
+    rgba(10, 28, 45, 0.8127626050420168) 37%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 37%,
+    rgba(10, 28, 45, 0.8127626050420168) 100%
+  );
   padding: 10px 15px;
 }
 
@@ -12,13 +21,14 @@
 }
 
 .icon {
-  height: 70px;
+  height: 60px;
 }
 
 .item {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .list {
@@ -34,10 +44,28 @@
   padding: 10px 0;
 }
 
+.buttonWrap {
+  margin-top: 20px;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    margin-top: 20px;
+  }
+
+  .list {
+    margin: 20px 0 20px 0;
+  }
+  .buttonWrap {
+    margin-bottom: 20px;
   }
 }

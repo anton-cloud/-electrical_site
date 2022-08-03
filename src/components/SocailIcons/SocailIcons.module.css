@@ -15,10 +15,19 @@
   height: 40px;
 }
 
+.icon {
+  transition: box-shadow 1s ease;
+  transition: transform 1s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
 @media screen and (min-width: 1024px) {
   .icon {
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
   }
   .item:not(:first-child) {
     margin-left: 15px;

@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@600&display=swap");
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
+  font-family: "Poppins", sans-serif;
   color: #fff;
 }
 
@@ -40,7 +37,7 @@ img {
   height: auto;
 }
 
-.list {
+li {
   list-style: none;
 }
 
@@ -62,7 +59,7 @@ img {
 }
 
 .active {
-  color: red;
+  color: #ffbb00;
 }
 
 .mymodal {
@@ -79,8 +76,8 @@ img {
   padding: 20px;
 
   background-color: #acb0be;
-  min-width: 80vw;
-  height: 60vh;
+  /* max-width: 60vw; */
+  max-height: 80vh;
 
   display: flex;
   flex-wrap: wrap;
@@ -90,7 +87,7 @@ img {
 }
 
 .myoverlay {
-  margin-top: 70px;
+  margin-top: 60px;
   position: fixed;
   top: 0;
   left: 0;
@@ -100,6 +97,7 @@ img {
 }
 
 .ReactModal__Overlay {
+  z-index: 2;
   opacity: 0;
   transition: opacity 500ms ease-in-out;
 }
@@ -133,6 +131,12 @@ img {
     width: 730px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .mymodal {
+    min-width: 90vw;
+    max-height: 80vh;
+    overflow: scroll;
   }
 }
 

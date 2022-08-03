@@ -21,7 +21,7 @@ export const CoverStyled = styled.section`
   color: #fff;
 
   @media screen and (min-width: 640px) {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(${desc_img});
     min-height: 500px;
   }

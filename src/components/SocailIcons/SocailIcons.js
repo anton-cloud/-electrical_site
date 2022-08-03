@@ -12,16 +12,16 @@ const SocailIcons = () => {
         </a>
       </li>
 
-      <li className={styles.item}>
+      {/* <li className={styles.item}>
         <a href="mailto:a.sharudylo@gmail.com">
           <svg className={styles.icon}>
             <use href={sprite + "#icon-email"} />
           </svg>
         </a>
-      </li>
+      </li> */}
 
       <li className={styles.item}>
-        <a href="viber://chat?number=%2B380964087199">
+        <a href="viber://chat?number=%2B380962152544">
           <svg className={styles.icon}>
             <use href={sprite + "#icon-viber"} />
           </svg>

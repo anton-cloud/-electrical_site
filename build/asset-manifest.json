@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.efdcd9e5.css",
-    "main.js": "/static/js/main.7b0f5d97.js",
+    "main.css": "/static/css/main.bbc452e3.css",
+    "main.js": "/static/js/main.078d8190.js",
     "static/media/bg_1024.jpg": "/static/media/bg_1024.feca9e09ffae5cfde242.jpg",
-    "static/media/bg_640.jpg": "/static/media/bg_640.f2dd1b368113fdc3c7e4.jpg",
-    "static/media/1.jpg": "/static/media/1.00fb8c1b186478ac7fd1.jpg",
-    "static/media/sprite.svg": "/static/media/sprite.979db3d9248e58c5a79bb6dda4f4a4ec.svg",
-    "static/media/3.jpg": "/static/media/3.c24ab729c49409546b1a.jpg",
     "static/media/2.jpg": "/static/media/2.ff768ab79a4711c6c40b.jpg",
+    "static/media/1.jpg": "/static/media/1.00fb8c1b186478ac7fd1.jpg",
+    "static/media/3.jpg": "/static/media/3.c24ab729c49409546b1a.jpg",
+    "static/media/bg_640.jpg": "/static/media/bg_640.f2dd1b368113fdc3c7e4.jpg",
+    "static/media/schitok.jpg": "/static/media/schitok.1dbe456b0c619da03c11.jpg",
+    "static/media/prokladka-silovogo-kabelya.jpg": "/static/media/prokladka-silovogo-kabelya.347e5d0384c1ce338a8f.jpg",
+    "static/media/rozetku.jpg": "/static/media/rozetku.d492955d113ea0257847.jpg",
+    "static/media/sprite.svg": "/static/media/sprite.0d9ebb2c32fc17000c0d3e81b1a0a8a2.svg",
+    "static/media/osvitlenya.jpeg": "/static/media/osvitlenya.11acbe5b82247fc6b8cf.jpeg",
     "index.html": "/index.html",
-    "main.efdcd9e5.css.map": "/static/css/main.efdcd9e5.css.map",
-    "main.7b0f5d97.js.map": "/static/js/main.7b0f5d97.js.map"
+    "main.bbc452e3.css.map": "/static/css/main.bbc452e3.css.map",
+    "main.078d8190.js.map": "/static/js/main.078d8190.js.map"
   },
   "entrypoints": [
-    "static/css/main.efdcd9e5.css",
-    "static/js/main.7b0f5d97.js"
+    "static/css/main.bbc452e3.css",
+    "static/js/main.078d8190.js"
   ]
 }

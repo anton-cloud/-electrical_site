@@ -2,7 +2,11 @@ footer {
   bottom: 0;
 }
 .footer__container {
-  background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(
+    0deg,
+    rgba(10, 28, 45, 0.8127626050420168) 37%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .footerIcon {
@@ -28,7 +32,7 @@ footer {
   text-align: center;
 }
 
-.contacts__list {
+/* .contacts__list {
   margin: 10px 0;
 
   display: flex;
@@ -41,7 +45,7 @@ footer {
 .contacts__link {
   text-decoration: none;
   color: inherit;
-}
+} */
 
 @media screen and (min-width: 600px) {
   .footer__container {

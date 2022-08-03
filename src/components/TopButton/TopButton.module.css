@@ -1,0 +1,32 @@
+.myBtn {
+  display: block;
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  z-index: 1;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+}
+
+.none {
+  display: none;
+}
+
+.myBtn:hover {
+  scale: 1.1;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  opacity: 0.5;
+  transition: opacity 500ms ease-in-out;
+}
+
+.icon:hover {
+  width: 70px;
+  height: 70px;
+  opacity: 1;
+}

@@ -1,6 +1,20 @@
 .section {
-  background-color: gray;
+  background: linear-gradient(
+    0deg,
+    rgba(10, 28, 45, 0.8127626050420168) 37%,
+    rgba(0, 0, 0, 1) 100%
+  );
   padding: 10px 15px;
+}
+
+.sectionForServicesPage {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(10, 28, 45, 0.8127626050420168) 60%
+  );
+
+  height: calc(100vh - 233px);
 }
 
 .title {
@@ -20,6 +34,29 @@
 
 .services__item {
   list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  padding-bottom: 10px;
+
+  cursor: pointer;
+  /* transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s; */
+
+  transition: box-shadow 1s ease;
+  transition: transform 1s ease;
+}
+
+.services__item:hover {
+  transform: scale(1.07);
+  box-shadow: 0px 0px 39px 5px rgba(230, 186, 99, 1);
+}
+
+.services__item:hover .services__link {
+  color: #fff;
 }
 
 .services__title {
@@ -36,23 +73,37 @@
   justify-content: center;
 
   text-decoration: none;
-  color: inherit;
+  color: #fff;
 }
 
 .services__img {
   width: 400px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-/* .services__description {
-} */
+.services__description {
+  padding: 0 5px;
+}
 
 @media screen and (min-width: 768px) {
   .services__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 1%;
   }
   .services__img {
     height: 200px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services__list {
+    gap: 3%;
+    margin: 20px 0 40px 0;
+  }
+
+  .title {
+    padding-top: 40px;
   }
 }

@@ -1,3 +1,11 @@
 .wrapper {
-  margin-top: 70px;
+  height: calc(100vh - 233px);
+  /* background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 37%,
+    rgba(10, 28, 45, 0.8127626050420168) 100%
+  ); */
 }
+
+
+

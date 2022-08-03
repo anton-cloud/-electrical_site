@@ -1,17 +1,24 @@
 .header {
   position: fixed;
   width: 100vw;
+  z-index: 1000;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
 
   top: 0;
 
   padding: 5px;
 
   height: 60px;
-  background: rgb(10, 28, 45);
+  /* background: linear-gradient(
+    0deg,
+    rgba(10, 28, 45, 0.8127626050420168) 37%,
+    rgba(0, 0, 0, 1) 100%
+  ); */
   background: linear-gradient(
     0deg,
     rgba(10, 28, 45, 0.8127626050420168) 37%,
@@ -36,9 +43,27 @@
   fill: #fff;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper:first-child {
+  width: 90%;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .mobile {
+    padding: 10px 5px;
+    font-size: 12px;
   }
 }
 

@@ -1,24 +1,17 @@
 import styles from "./Header.module.css";
 import sprite from "../../icons/sprite.svg";
-import { useState, useEffect } from "react";
 import Navigation from "../Navigation";
 import SocailIcons from "../SocailIcons/SocailIcons";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
+import ContactNumbers from "../ContactNumbers/ContactNumbers";
+import DropdownNumbers from "../DropdownNumbers/DropdownNumbers";
 
-const Header = ({ isOpenModal, openModal }) => {
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-  // const [isOpenModal, setOpenModal] = useState(false);
-  const breakPoint = 1024;
-  const isDesktop = viewportWidth >= breakPoint;
+const Header = ({ isOpenModal, openModal, isDesktop, handleShow, setOpenModal }) => {
 
-  const handleResizeWindow = () => setViewportWidth(window.innerWidth);
-  // const openModal = () => setOpenModal((prev) => !prev);
-
-  useEffect(() => {
-    window.addEventListener("resize", handleResizeWindow);
-  }, []);
 
   return (
+
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/">
@@ -27,11 +20,29 @@ const Header = ({ isOpenModal, openModal }) => {
           </svg>
         </Link>
 
-        {isDesktop && <Navigation isDesktop={isDesktop} />}
+
+        {!isDesktop && (
+          <ul className={styles.wrapper}>
+            <li>       <Button className={styles.mobile} variant="outline-light" type="button" onClick={handleShow}>
+              Оформити заявку
+            </Button></li>
+            <li>
+              <DropdownNumbers /></li>
+          </ul>
+        )}
+
+        {isDesktop && <Navigation isDesktop={isDesktop} handleShow={handleShow} openModal={openModal} setOpenModal={setOpenModal} />}
 
         {isDesktop && <SocailIcons />}
 
-        {isDesktop && <button type="button">Оформити заявку</button>}
+        {isDesktop && (
+          <>
+            <Button variant="outline-light" type="button" onClick={handleShow}>
+              Оформити заявку
+            </Button>
+            <ContactNumbers />
+          </>
+        )}
 
         {!isDesktop &&
           (isOpenModal ? (
@@ -43,8 +54,11 @@ const Header = ({ isOpenModal, openModal }) => {
               <use href={sprite + "#icon-menu"} />
             </svg>
           ))}
+
+
       </div>
-    </header>
+    </header >
+
   );
 };
 
